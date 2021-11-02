@@ -1,12 +1,8 @@
 ﻿using UnityEditor;
 
 /* Lock The Inspector
-
-by your host, the man they call Toast
-Discord: dorktoast#0801
-
-based on a script by SgtOkiDoki
-
+Toast's useful Unity Scripts
+https://github.com/dorktoast/ToastsUsefulUnityScripts
 Released under MIT
 */
 

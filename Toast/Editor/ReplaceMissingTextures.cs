@@ -3,10 +3,8 @@ using UnityEngine;
 using UnityEditor;
 
 /* Replace Missing Textures
-
-by your host, the man they call Toast
-Discord: dorktoast#0801
-
+Toast's useful Unity Scripts
+https://github.com/dorktoast/ToastsUsefulUnityScripts
 Released under MIT
 */
 

@@ -4,12 +4,8 @@ using UnityEditor;
 using System.Collections.Generic;
 
 /* Find-a-Shader
-
-by your host, the man they call Toast
-Discord: dorktoast#0801
-
-Based on a script by hzigy and robertbu
-
+Toast's useful Unity Scripts
+https://github.com/dorktoast/ToastsUsefulUnityScripts
 Released under MIT
 */
 
