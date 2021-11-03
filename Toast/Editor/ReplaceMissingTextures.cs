@@ -10,17 +10,17 @@ Released under MIT
 
 namespace Toast
 {
-    public class ReplaceMissingTextures : EditorWindow
+    public class ReplaceMissingMaterials : EditorWindow
     {
         public Object NewMat;
         public bool ChildOnly;
         private MeshRenderer[] renderers;
         float labelWidth = 150f;
 
-        [MenuItem("Window/Toast's Script Library/Replace Missing Textures")]
+        [MenuItem("Window/Toast's Script Library/Replace Missing Materials")]
         public static void ShowWindow()
         {
-            GetWindow(typeof(ReplaceMissingTextures), false, "Replace Missing Textures");
+            GetWindow(typeof(ReplaceMissingMaterials), false, "Replace Missing Materials");
         }
 
         public void OnGUI()
