@@ -27,8 +27,8 @@ namespace Toast
         {
             GUILayout.BeginHorizontal();
             EditorGUILayout.LabelField(
-                "This tool finds Missing Textures and replaces them all" +
-                "with the specified texture.",
+                "This tool finds Missing Materials and replaces them all" +
+                "with the specified Material.",
                 EditorStyles.wordWrappedLabel);
             GUILayout.EndHorizontal();
 
@@ -43,7 +43,7 @@ namespace Toast
             GUILayout.EndHorizontal();
 
             GUILayout.BeginHorizontal();
-            if (GUILayout.Button("Find And Replace textures"))
+            if (GUILayout.Button("Find And Replace Materials"))
             {
                 if (NewMat == null)
                 {
@@ -60,7 +60,7 @@ namespace Toast
                 {
                     renderers = FindObjectsOfType<MeshRenderer>();
                 }
-                Debug.Log($"Replace Missing Textures: Replacing (Children only = {ChildOnly})...");
+                Debug.Log($"Replace Missing Materials: Replacing (Children only = {ChildOnly})...");
                 FindInSelected((Material)NewMat, renderers);
             }
             GUILayout.EndHorizontal();
