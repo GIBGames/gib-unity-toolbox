@@ -39,7 +39,7 @@ namespace Toast
             GUILayout.EndHorizontal();
 
             GUILayout.BeginHorizontal();
-            ChildOnly = EditorGUILayout.Toggle("Children of Selected Only", ChildOnly);
+            ChildOnly = EditorGUILayout.Toggle("Children of Selected Object Only", ChildOnly);
             GUILayout.EndHorizontal();
 
             GUILayout.BeginHorizontal();
