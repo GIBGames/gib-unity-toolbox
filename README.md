@@ -1,6 +1,6 @@
-# Toast's Useful Unity Script Library
+# GIB Games Presents: Tools in a Bottle
+## A collection of useful Unity scripts and extensions.
 
-A collection of useful Unity Scripts I've collected over time. These are all based on MIT-licensed scripts.
 
 ## Installation
 
