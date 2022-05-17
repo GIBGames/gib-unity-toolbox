@@ -1,4 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![GitHub followers](https://img.shields.io/github/followers/GIBGames?style=social) ![Twitter Follow](https://img.shields.io/twitter/follow/gibgames?style=social) 
 
 # GIB Games Presents: Tools in a Bottle
 ## A collection of useful Unity scripts and extensions.
