@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /* List Extensions
-Toast's useful Unity Scripts
-https://github.com/dorktoast/ToastsUsefulUnityScripts
+GIB Games Unity Toolbox
+https://github.com/GIBGames/gib-unity-toolbox
 Released under MIT
 */
 
-public static class ToastsListExtensions
+public static class GIBListExtensions
 {
     /// <summary>
     /// Add multiple values to a List at once. Format: list.AddMulti("a", "z");

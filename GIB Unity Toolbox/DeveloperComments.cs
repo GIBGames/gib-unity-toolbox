@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Toast
+namespace GIB
 {
     /// <summary>
     /// Literally just a text box for developer commentary.

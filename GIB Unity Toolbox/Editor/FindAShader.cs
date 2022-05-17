@@ -4,12 +4,12 @@ using UnityEditor;
 using System.Collections.Generic;
 
 /* Find-a-Shader
-Toast's useful Unity Scripts
-https://github.com/dorktoast/ToastsUsefulUnityScripts
+GIB Games Unity Toolbox
+https://github.com/GIBGames/gib-unity-toolbox
 Released under MIT
 */
 
-namespace Toast
+namespace GIB
 {
     public class FindAShader : EditorWindow
     {
@@ -18,7 +18,7 @@ namespace Toast
         bool exact; // Determines if you're doing an exact search or a "contains" search
         Vector2 scrollPos; // for scrolling
 
-        [MenuItem("Window/Toast's Script Library/Find-a-Shader")]
+        [MenuItem("GIB/Utilities/Find-a-Shader")]
         public static void ShowWindow()
         {
             EditorWindow.GetWindow(typeof(FindAShader), false, "Find-A-Shader"); // Makes the window appear.

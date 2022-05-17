@@ -6,17 +6,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /* Editor Physics
-Toast's useful Unity Scripts
-https://github.com/dorktoast/ToastsUsefulUnityScripts
+GIB Games Unity Toolbox
+https://github.com/GIBGames/gib-unity-toolbox
 Released under MIT
 */
 
-namespace Toast
+namespace GIB
 {
     public class EditorPhysics : EditorWindow
     {
 #region Create Instance
-        [MenuItem("Window/Toast's Script Library/Editor Physics")]
+        [MenuItem("GIB/Utilities/Editor Physics")]
         private static void CreateInstance()
         {
             CreateWindow<EditorPhysics>("Editor Physics").Show();

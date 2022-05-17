@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /* Ignore Collide
-Toast's useful Unity Scripts
-https://github.com/dorktoast/ToastsUsefulUnityScripts
+GIB Games Unity Toolbox
+https://github.com/GIBGames/gib-unity-toolbox
 Released under MIT
 */
 
-namespace Toast
+namespace GIB
 {
+	/// <summary>
+	/// Sets a collider to ignore collisions from specific other colliders.
+	/// </summary>
     public class IgnoreCollide : MonoBehaviour
     {
         public List<Collider> CollidersToIgnore;

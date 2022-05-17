@@ -3,13 +3,11 @@ using UnityEngine;
 using UnityEditor;
 
 /* Replace Missing Textures
-Toast's useful Unity Scripts
-https://github.com/dorktoast/ToastsUsefulUnityScripts
+GIB Games Unity Toolbox
+https://github.com/GIBGames/gib-unity-toolbox
 Released under MIT
 */
 
-namespace Toast
-{
     public class ReplaceMissingMaterials : EditorWindow
     {
         public Object NewMat;
@@ -17,7 +15,7 @@ namespace Toast
         private MeshRenderer[] renderers;
         float labelWidth = 150f;
 
-        [MenuItem("Window/Toast's Script Library/Replace Missing Materials")]
+        [MenuItem("GIB/Utilities/Replace Missing Materials")]
         public static void ShowWindow()
         {
             GetWindow(typeof(ReplaceMissingMaterials), false, "Replace Missing Materials");
@@ -83,5 +81,5 @@ namespace Toast
         }
 
     }
-}
+
 #endif
