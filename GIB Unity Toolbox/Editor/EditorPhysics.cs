@@ -5,24 +5,23 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-/* Editor Physics
-GIB Games Unity Toolbox
-https://github.com/GIBGames/gib-unity-toolbox
-Released under MIT
-*/
+// Created by SgtOkiDoki, released under MIT
 
-namespace GIB
+namespace GIB.EditorUtilities
 {
+    /// <summary>
+    /// Simulates physics inside the Editor Window.
+    /// </summary>
     public class EditorPhysics : EditorWindow
     {
-#region Create Instance
-        [MenuItem("GIB/Utilities/Editor Physics")]
+        #region Create Instance
+        [MenuItem("GIB//Fix Box/Physics Simulator",false,1)]
         private static void CreateInstance()
         {
-            CreateWindow<EditorPhysics>("Editor Physics").Show();
+            EditorWindow.GetWindow(typeof(EditorPhysics), false, "Physics Simulator").Show();
         }
-#endregion
-
+        #endregion
+// AAAA
         private void OnEnable()
         {
             EditorApplication.update += OnEditorUpdate;
@@ -30,6 +29,7 @@ namespace GIB
         }
         private void OnDisable()
         {
+            StopSimulation();
             EditorApplication.update -= OnEditorUpdate;
             SceneView.duringSceneGui -= OnSceneGUI;
         }
@@ -39,7 +39,7 @@ namespace GIB
             StopSimulation();
         }
 
-#region Variables
+        #region Variables
         private int Tickrate = 33;
         private float Speed = 1f;
         private Vector3 Gravity = new Vector3(0, -9.8f, 0f);
@@ -48,7 +48,7 @@ namespace GIB
         private List<PlayingRigidbody> simulatedObjects = new List<PlayingRigidbody>(64);
         private bool _isSimulating;
         private Vector3 oldGravity;
-#endregion
+        #endregion
 
         private void StartSimulation()
         {
@@ -174,13 +174,6 @@ namespace GIB
 
         private void OnGUI()
         {
-            GUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField(
-                "This tool simulates physics in-editor, allowing for precise flush-to-floor" +
-                "placement of objects, as well as simulation of debris and other scattered things.",
-                EditorStyles.wordWrappedLabel);
-            GUILayout.EndHorizontal();
-
             EditorGUILayout.BeginVertical("box");
             {
                 Tickrate = (int)EditorGUILayout.Slider("Tickrate", Tickrate, 8, 128);
@@ -206,7 +199,7 @@ namespace GIB
             }
         }
 
-#region Classes
+        #region Classes
         class HoldRigidbody : IEquatable<Rigidbody>
         {
             public Rigidbody Target;
@@ -273,7 +266,7 @@ namespace GIB
                 }
             }
         }
-#endregion
+        #endregion
 
     }
 }

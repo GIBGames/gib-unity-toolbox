@@ -1,19 +1,17 @@
-﻿#if UNITY_EDITOR
-using UnityEditor;
+﻿using UnityEditor;
 
-/* Lock The Inspector
-GIB Games Unity Toolbox
-https://github.com/GIBGames/gib-unity-toolbox
-Released under MIT
-*/
-
-static class EditorMenus
+namespace GIB.EditorUtilities
 {
-    [MenuItem("Window/Toggle Inspector Lock &#q")] 
-    static void ToggleInspectorLock()
+    /// <summary>
+    /// Locks the inspector window.
+    /// </summary>
+    static class EditorMenus
     {
-        ActiveEditorTracker.sharedTracker.isLocked = !ActiveEditorTracker.sharedTracker.isLocked;
-        ActiveEditorTracker.sharedTracker.ForceRebuild();
+        [MenuItem("GIB//Fix Box/Toggle Inspector Lock &#q", false,21)]
+        static void ToggleInspectorLock()
+        {
+            ActiveEditorTracker.sharedTracker.isLocked = !ActiveEditorTracker.sharedTracker.isLocked;
+            ActiveEditorTracker.sharedTracker.ForceRebuild();
+        }
     }
 }
-#endif

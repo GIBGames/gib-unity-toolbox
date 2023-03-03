@@ -1,21 +1,26 @@
-﻿#if UNITY_EDITOR
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 
 /* Replace Missing Textures
-GIB Games Unity Toolbox
-https://github.com/GIBGames/gib-unity-toolbox
+Toast's useful Unity Scripts
+https://github.com/dorktoast/ToastsUsefulUnityScripts
 Released under MIT
 */
 
+namespace GIB.EditorUtilities
+{
+    /// <summary>
+    /// Replaces all missing materials in a scene with a specified material.
+    /// </summary>
     public class ReplaceMissingMaterials : EditorWindow
     {
         public Object NewMat;
         public bool ChildOnly;
         private MeshRenderer[] renderers;
-        float labelWidth = 150f;
+        //float labelWidth = 150f;
 
-        [MenuItem("GIB/Utilities/Replace Missing Materials")]
+        [MenuItem("GIB//Fix Box/Replace Missing Materials",false,1)]
         public static void ShowWindow()
         {
             GetWindow(typeof(ReplaceMissingMaterials), false, "Replace Missing Materials");
@@ -81,5 +86,5 @@ Released under MIT
         }
 
     }
-
+}
 #endif

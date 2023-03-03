@@ -1,16 +1,19 @@
-﻿#if UNITY_EDITOR
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
 
 /* Find-a-Shader
-GIB Games Unity Toolbox
-https://github.com/GIBGames/gib-unity-toolbox
+Toast's useful Unity Scripts
+https://github.com/dorktoast/ToastsUsefulUnityScripts
 Released under MIT
 */
 
-namespace GIB
+namespace GIB.EditorUtilities
 {
+    /// <summary>
+    /// Locates materials by shader.
+    /// </summary>
     public class FindAShader : EditorWindow
     {
         string s = ""; // textbox string
@@ -18,7 +21,7 @@ namespace GIB
         bool exact; // Determines if you're doing an exact search or a "contains" search
         Vector2 scrollPos; // for scrolling
 
-        [MenuItem("GIB/Utilities/Find-a-Shader")]
+        [MenuItem("GIB//Fix Box/Find Materials With Shader",false,1)]
         public static void ShowWindow()
         {
             EditorWindow.GetWindow(typeof(FindAShader), false, "Find-A-Shader"); // Makes the window appear.
