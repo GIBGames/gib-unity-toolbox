@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LookAtPlayer : MonoBehaviour
 {
+	public bool IsLooking;
     private Transform _camera;
 
     private void Start()
@@ -13,6 +14,7 @@ public class LookAtPlayer : MonoBehaviour
 
     private void FixedUpdate()
     {
-            transform.LookAt(Camera.main.transform);
+		if(IsLooking)
+			transform.LookAt(Camera.main.transform);
     }
 }
